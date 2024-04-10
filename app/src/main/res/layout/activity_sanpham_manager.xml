@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.SanphamManagerActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorToolBar"
+        app:title="Quản lý sản phẩm"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbarSP"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btnThemsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sản phẩm"
+        android:backgroundTint="#C5B8B8"
+        android:textColor="@color/black"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+        <ListView
+            android:id="@+id/listSP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

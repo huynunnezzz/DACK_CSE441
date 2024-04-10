@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.ThemSPActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorToolBar"
+        app:title="Thêm sản phẩm"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbarThemSP"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm"
+                    android:layout_marginTop="5dp"
+                    />
+                <EditText
+                    android:id="@+id/edtTensp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="Tên sản phẩm"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá sản phẩm"
+                    android:layout_marginTop="5dp"
+                    />
+                <EditText
+                    android:id="@+id/edtGiasp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Giá sản phẩm"
+                    android:text=""
+                    android:inputType="numberDecimal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mô tả sản phẩm"
+                    android:layout_marginTop="5dp"
+                    />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMotasp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mô tả sản phẩm"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thêm ảnh:"
+                        android:textSize="30dp"
+                        android:layout_marginTop="30dp"/>
+                    <FrameLayout
+                        android:id="@+id/layoutImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19.5dp"
+                        android:layout_marginStart="15dp">
+
+                        <ImageView
+                            android:id="@+id/imvsp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_baseline_camera_alt_24"
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+                    <Button
+                        android:id="@+id/btnInsert"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:text="Thêm"
+                        android:gravity="center"
+                        android:backgroundTint="#FF0000"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>

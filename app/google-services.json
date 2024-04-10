@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "479278883669",
+    "project_id": "dack-3a890",
+    "storage_bucket": "dack-3a890.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479278883669:android:67bd9205fc2d8b71ab45dc",
+        "android_client_info": {
+          "package_name": "com.example.dack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwLiBmJCXh-dhsYt1SgpeD1toMjJomNzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

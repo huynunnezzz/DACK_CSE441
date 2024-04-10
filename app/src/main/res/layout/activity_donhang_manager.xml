@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.DonhangManagerActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarqldonhang"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="#FFFFFF"
+        app:title="Quản lý đơn hàng"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDonhangtrong"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="Không có đơn hàng nào"
+            android:visibility="invisible"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDonhang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+</LinearLayout>
